@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>QuickToDo</title>
+    <link rel="icon" type="image/x-icon" href="./images/pngtree-green-business-pending-items-label-png-image_4896750.jpg">
+
+
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+   
+    
+    <section>
+        <div class="custom-shape-divider-top-1711047019">
+            
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+
+            
+        </div>
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand mx-auto" href="#">QuickToDo</a>
+             
+              
+               
+             
+            </div>
+          </nav>
+
+        
+          
+    </section>
+
+    
+   <section>
+
+    
+    <div class="w-50  mx-auto  rounded p-3" id="todo">
+        <h1 class="text-center">To-Do</h1>
+
+        <div> <label for="taskNameInput" class="my-2">Task Name:</label>
+            <input type="text" class="form-control" id="taskNameInput">
+        </div>
+       
+        <div> <label for="taskTypeInput" class="my-2">Task Type:</label>
+            
+            <select id="taskTypeInput" class="form-control">
+                <option value="--">Choose Task Type</option>
+                <option value="Sports">Sports</option>
+                <option value="Chores">Chores</option>
+                <option value="Work">Work</option>
+                <option value="Hobby">Hobby</option>
+              </select>
+        </div>
+
+        <div> <label for="statusInput" class="my-2">Status:</label>
+            
+            <select id="statusInput" class="form-control">
+                <option value="--">Choose Task Status</option>
+                <option value="Completed">Completed</option>
+                <option value="Not Completed">Not Completed</option>
+              
+              </select>
+        </div>
+
+
+        <button class="btn btn-main mt-3 w-100 " id="addBtn" onclick=" addTask() ">Add Task</button>
+        <button class="btn btn-main mt-3 w-100 d-none  " id="updateBtn" onclick=" updateTask()">Update Task</button>
+
+        <input id="searchInput" type="search" oninput="Search()" placeholder="Search by name" class="form-control my-3 w-75 mx-auto">
+        <div class="table-responsive">
+        <table class="table  my-3 text-center">
+           <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Action</th>
+                <th>Status</th>
+
+            </tr>
+           </thead>
+           <tbody id="tablebody">
+           </tbody>
+
+        </table>
+        </div>
+    </div>
+   </section>
+   
+
+    
+    
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
